@@ -2,7 +2,7 @@
 This is the compose file for deployment
 
 ## For first initial deployment
-You have to put the environment variables in the '<*>' format in order to make this compose file runnable.
+You have to replace the environment variables in the '<*>' format with your environment variable in order to make this compose file runnable.
 ```
 docker compose up --build -d
 ```
