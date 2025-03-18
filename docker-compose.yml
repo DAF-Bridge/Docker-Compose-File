@@ -94,11 +94,12 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://100.75.195.6:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://<host-ip-address>:9092
       KAFKA_LISTENER_SECURITY_PROTOCOL: PLAINTEXT
       KAFKA_LISTENER_PORT: 9092
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      # Can use any table that is public in the PostgreSQL
       KAFKA_CREATE_TOPICS: "cdc.public.events:3:1,cdc.public.org_open_jobs:3:1,cdc.public.organizations:3:1"
     ports:
       - "9092:9092"
