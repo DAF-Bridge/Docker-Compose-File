@@ -1,5 +1,5 @@
 # __Docker-Compose-File__
-This is the compose file for deployment
+This is the compose file for backend deployment
 
 ## For first initial deployment
 You have to replace the environment variables in the '<*>' format with your environment variable in order to make this compose file runnable. <br />
