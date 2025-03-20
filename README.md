@@ -27,7 +27,7 @@ pipeline {
     environment {
         GITHUB_USER = credentials('github-username')
         GITHUB_TOKEN = credentials('github-token')
-        IMAGE_NAME = 'ghcr.io/daf-bridge/talent-atmos-backend:latest
+        IMAGE_NAME = 'ghcr.io/daf-bridge/talent-atmos-backend:latest'
         COMPOSE_DIR = '/home/raiwin/daf-bridge' // Change this to your actual compose file directory
     }
     
