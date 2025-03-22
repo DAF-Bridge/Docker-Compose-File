@@ -1,8 +1,9 @@
 # __Docker-Compose-File__
 This is the compose file for backend deployment
 
-## For first initial deployment
+## For first initial deployment & Environment Variables
 You have to replace the environment variables in the '<*>' format with your environment variable in order to make this compose file runnable. <br />
+Create a *.env* file in the each project directory and configure it based on *.env.example* according to the project repository. <br />
 
 After the first compose up finised, you have to run the connector-cdc curl commmand to make connection between the PostgreSQL & Debezium which you <br />
 can find the curl command in the Kafka-Consumer-CDC repository after that restart the consumer containers again to fully deploy the project. 
