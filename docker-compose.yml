@@ -53,6 +53,19 @@ services:
       - backend
       - data
 
+  recommendation-service:
+    image: ghcr.io/daf-bridge/talent-atmos-rec:latest
+    container_name: rec-service
+    env_file:
+      - ./<path-to-your-env-file>
+    depends_on:
+      - ta-backend
+      - postgres
+    ports:
+      - "7000:7000"
+    networks:
+      - backend
+
   postgres:
     image: postgres:17
     container_name: postgres-cdc
