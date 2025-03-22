@@ -1,6 +1,6 @@
 services:
   golang-app-cdc-events:
-    image: ghcr.io/daf-bridge/kafka-consumer-cdc:latest@sha256:afe47184315f6a06c4b4a0fa5b432986c97b819cd11ec4c8711891ac90a03470
+    image: ghcr.io/daf-bridge/kafka-consumer-cdc:latest
     container_name: golang-app-events
     env_file:
       - ./<path-to-your-env-file>
@@ -17,7 +17,7 @@ services:
       - backend
 
   golang-app-cdc-jobs:
-    image: ghcr.io/daf-bridge/kafka-consumer-cdc:latest@sha256:afe47184315f6a06c4b4a0fa5b432986c97b819cd11ec4c8711891ac90a03470
+    image: ghcr.io/daf-bridge/kafka-consumer-cdc:latest
     container_name: golang-app-jobs
     env_file:
       - ./<path-to-your-env-file>
