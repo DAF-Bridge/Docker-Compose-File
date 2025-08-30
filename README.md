@@ -1,3 +1,6 @@
+# System Diagram Overview
+![](arch.png)
+
 # __Docker-Compose-File__
 This is the compose file for backend deployment
 
